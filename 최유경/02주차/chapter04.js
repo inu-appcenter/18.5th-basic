@@ -21,5 +21,5 @@ let $2name;
 //4. 변수 명명 가이드
 let salesCount = 1;
 let refundCount = 2;
-let totalSalesCount = salesCount-refundCoun;
-//변수명은 이해하기 쉬운 
+let totalSalesCount = salesCount - refundCount;
+//변수명은 이해하기 쉬운 이름으로 작성하는 것이 좋다.
