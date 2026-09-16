@@ -1,29 +1,25 @@
-/* 전체 글꼴 및 기본 배경 */
 body {
   font-family: sans-serif;
   background-color: #f9f9f9;
-  padding: 40px;
+  padding: 10px;
 }
 
-/* 제목 스타일 */
 h1 {
-  color: #333;
-  border-bottom: 2px solid #007bff;
+  color: #575454;
+  border-bottom: 2px solid #000000;
   padding-bottom: 8px;
 }
 
-/* 목록 기호 제거 및 점선 테두리 */
 ul {
   list-style: none;
   padding: 0;
 }
 
 li {
-  padding: 8px 0;
-  border-bottom: 1px solid #ddd;
+  padding: 8px;
+  border-bottom: 1px solid #cfcdcd;
 }
 
-/* 항목 제목 굵게 및 간격 조절 */
 b {
   display: inline-block;
   width: 80px;
