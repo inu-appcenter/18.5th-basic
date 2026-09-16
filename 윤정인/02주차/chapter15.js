@@ -35,4 +35,4 @@ delete person["favoriteFood"];
 //3.5 프로퍼티의 존재 유무를 확인하는 방법(in연산자)
 let result1 = "name" in person;
 let result2 = "cat" in person;
-console.log(result2);
+//console.log(result2);

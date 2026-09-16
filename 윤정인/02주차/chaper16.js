@@ -9,14 +9,14 @@ animal.age = 2; //추가
 animal.name = "까망이"; //수정
 delete animal.color; //삭제 
 
-console.log(animal);
+//console.log(animal);
 
 //2.메서드
 const person={
   name :"윤정인",
   //메서드 선언
   sayHi(){
-    console.log("안녕!");
+    //console.log("안녕!");
   },
 };
 
