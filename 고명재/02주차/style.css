@@ -1,0 +1,31 @@
+/* 페이지 전체 스타일 */
+body {
+  font-family: sans-serif;
+  line-height: 1.7;
+  max-width: 600px; /* 너무 넓어지지 않게 */
+  margin: 0 auto; /* 가운데 정렬 */
+  padding: 20px;
+  color: #333;
+}
+
+/* 제목 */
+h1 {
+  text-align: center;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #333;
+}
+
+/* 항목 제목 */
+h2 {
+  font-size: 20px;
+  margin-top: 35px;
+}
+
+/* 목록 */
+ul {
+  padding-left: 25px;
+}
+
+li {
+  margin-bottom: 8px;
+}
