@@ -4,10 +4,10 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
 
-function App() {
+function App() { //App 컴퍼런트
   const [count, setCount] = useState(0)
 
-  return (
+  return ( // 함수가 HTML 태그들을 return함 => 컴퍼런트
     <>
       <section id="center">
         <div className="hero">
