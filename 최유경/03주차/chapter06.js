@@ -14,7 +14,6 @@ for (let i = 0; i < arr2.length; i++) {
 
 //1.2 for of 반복문
 // 오직 배열을 순회하기 위해서 존재
-// 인덱스를 사용하지 않고 배열 안의 값을 순서대로 순회
 for (let item of arr) {
   console.log(item);
 }
@@ -48,7 +47,6 @@ for (let value of values) {
 
 //2.3 for in
 //객체만을 위해 존재하는 특수 반복문
-
 for (let key in person) {
   const value = person[key];
   console.log(key, value);
