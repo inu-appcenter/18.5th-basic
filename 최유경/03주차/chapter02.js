@@ -26,7 +26,6 @@ function returnTrue() {
 
 console.log(returnTrue() || returnFalse()); //단락평가O
 
-//논리연산자식에 falsy하거나 truthy한 값이 쓰였을 때는 연산의 결과가 truthy하거나 falsy한 값 그 자체가 되어버려서 undefined나 10 그대로 출력된다.
 
 //단락 평가 활용 사례
 function printName(person) {
