@@ -13,8 +13,6 @@ const tennisPeople = arr1.filter(
 );
 console.log(tennisPeople);
 
-//find, findIndex처럼 배열의 모든 요소들을 순회하면서 조건을 만족하는 값들만 새로운 배열로 반환
-// 웹서비스 검색기능이나 카테고리별 필터 같은 기능에는 필수적으로 사용됨
 
 //2.map
 //배열의 모든 요소를 순회하면서, 각각 콜백함수를 실행하고 그 결과값들을 모아서 새로운 배열로 반환
@@ -25,7 +23,6 @@ const mapResult1 = arr2.map((item, idx, arr) => {
 });
 console.log(mapResult1); //[2, 4, 6] <- 콜백함수가 반환한 값을 모아 새로운 배열로 반환
 
-// 배열의 값들을 변형한 새로운 배열을 생성할 수 있다.
 
 //예시
 let names = arr1.map((item) => item.name);
@@ -37,7 +34,7 @@ let arr3 = ["b", "a", "c"];
 arr3.sort();
 console.log(arr3);
 
-// 주의: 만약 문자열이 아니라 숫자값으로 배열이 이루어진 경우 -> sort메소드가 정상적으로 작동X
+
 let arr03 = [10, 3, 5];
 arr03.sort((a, b) => {
   if (a > b) {
@@ -52,8 +49,7 @@ arr03.sort((a, b) => {
   }
 });
 console.log(arr03); // [3, 5, 10] : 오름차순
-// sort메소드는 사전순으로 정렬하기 때문
-// 숫자 대소관계를 기준으로 설정하기 위해서 비교기준을 설정하는 콜백하수도 함께 넘겨줘야한다.
+
 
 //4. toSorted(가장 최근에 추가된 최신 함수)
 //정렬된 새로운 배열을 반환하는 메서드
@@ -61,7 +57,7 @@ console.log(arr03); // [3, 5, 10] : 오름차순
 // toSorted -> 원본배열은 두고 정렬된 새로운 배열 반환
 
 let arr5 = ["c", "a", "b"];
-let sorted = arr5.toSorted(); //새로운 문자열을 반환하는 거기 때문에 상수나 변수에 저장해야 한다.
+const sorted = arr5.toSorted(); //새로운 문자열을 반환하는 거기 때문에 상수나 변수에 저장해야 한다.
 
 console.log(arr5);
 console.log(sorted);
