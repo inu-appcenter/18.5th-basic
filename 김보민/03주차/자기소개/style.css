@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #fffaf0;
+  background-image:
+    radial-gradient(#ffd66b 2.5px, transparent 2.5px),
+    radial-gradient(#f2994a 2.5px, transparent 2.5px);
+  background-size: 28px 28px;
+  background-position: 0 0, 14px 14px;
+  color: #4a3626;
+  font-family: "Noto Sans KR", sans-serif;
+  line-height: 1.6em;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  padding: 48px 16px;
+}
+
+#card {
+  width: 100%;
+  max-width: 480px;
+  padding: 32px;
+  background-color: #ffffff;
+  border-top: 6px solid #f2994a;
+  border-radius: 4px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.sub {
+  margin-top: 4px;
+  color: #a9744f;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ecdfc8;
+  margin: 24px 0;
+}
+
+h2 {
+  font-size: 1.1em;
+  color: #e08e3e;
+}
+
+th {
+  text-align: left;
+  padding: 4px 24px 4px 0;
+  font-weight: normal;
+  color: #a9744f;
+}
+
+td {
+  padding: 4px 0;
+}
+
+ul li {
+  transition: color 200ms;
+}
+
+ul li:hover {
+  color: #e08e3e;
+}
+
+a {
+  color: #e08e3e;
+}
+
+button {
+  margin-top: 24px;
+  padding: 8px 16px;
+  border: 1px solid #e08e3e;
+  border-radius: 4px;
+  background-color: white;
+  color: #e08e3e;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 250ms;
+}
+
+button:hover {
+  background-color: #e08e3e;
+  color: white;
+}
+
+.github-link {
+  margin-top: 12px;
+}
+
+.github-link a {
+  font-size: 0.9em;
+  text-decoration: none;
+}
+
+.github-link a:hover {
+  text-decoration: underline;
+}
