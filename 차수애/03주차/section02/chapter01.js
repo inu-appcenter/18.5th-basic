@@ -12,7 +12,7 @@ if (!f2){
     console.log("f");
 }
 
-//2. Truthy 한 값
+// 2. Truthy 한 값
 // 7가지 falsy 한 값을 제외한 나머지 모든 값
 
 let t1 = "hello"; // 비어있지 않은 문자열

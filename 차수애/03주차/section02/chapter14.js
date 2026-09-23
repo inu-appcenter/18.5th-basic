@@ -26,4 +26,4 @@ async function printDate() {
     
 }
 
-printDate(); // 내부에서 await 때문에 1.5초 기다렸다가 결과 출력됨
+printDate(); // 내부에서 await 때문에 1.5초 기다렸다가 결과 출력

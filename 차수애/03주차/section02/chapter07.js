@@ -43,7 +43,7 @@ let sliced3 = arr5.slice(-3); // 뒤에서부터 3개 자름
 console.log(sliced);
 console.log(arr5);// slice로 배열 잘라내도 원본 배열의 값이 바뀌지는 않는다.
 
-//6. concat
+// 6. concat
 // 두개의 서로 다른 배열을 이어 붙여서 새로운 배열로 반환
 
 let arr6 = [1, 2];

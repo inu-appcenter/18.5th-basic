@@ -39,7 +39,7 @@ for(let value of values){
     console.log(value);
 }
 
-//2.3 for in 
+// 2.3 for in 
 
 for(let key in person){
     console.log(key);

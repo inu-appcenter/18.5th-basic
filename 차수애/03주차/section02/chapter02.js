@@ -10,8 +10,8 @@ function returnTrue() {
 console.log(returnTrue() && returnFalse()); // false
 console.log(returnTrue() || returnFalse()); // 첫번쨰 피연산자 값으로 단락평가 이루어짐
 
-// Truthy, Falsy
-
+// Truthy , Falsy
+ 
 function returnFalse() {
     return undefined;
 }

@@ -24,7 +24,7 @@ funcA(...arr1);
 // 2. Rest 매개변수
 // 나머지, 나머지 매개변수
 
-function funcB(one, ...rest){ // // Rest 매개변수: 남은 인수들을 하나의 배열로 모아서 받음
+function funcB(one, ...rest){ // // Rest 매개변수 : 남은 인수들을 하나의 배열로 모아서 받음
     console.log(rest);
 }
 

@@ -2,7 +2,7 @@
 let arr = [1, 2, 3];
 
 let [one, two, three, four = 4] = arr; // 배열의 구조 분해 할당을 통해 arr 배열의 값을 one, two, three 변수에 할당하고, 네 번째 값이 없으므로 four 변수에는 기본값 4를 할당
-console.log(one, two, three, four); // 1 2 3 4
+console.log(one, two, three, four);  // 1 2 3 4
 
 // 2. 객체의 구조 분해 할당
 

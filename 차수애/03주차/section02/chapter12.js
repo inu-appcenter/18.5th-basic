@@ -34,6 +34,7 @@ function freezeFood(food){
     }, 1500);
 }
 
+
 orderFood((food) => {
     console.log(food);
 

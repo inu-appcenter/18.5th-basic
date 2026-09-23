@@ -3,7 +3,7 @@
 let date1 = new Date(); // 현재시간 출력
 console.log(date1);
 
-let date2 = new Date("1997-01-07 / 10:10:10 "); // ., /, - 다 가능
+let date2 = new Date("1997-01-07 / 10:10:10 ");  // ., /, - 다 가능
 console.log(date2);
 
 // 2. 타임 스탬프

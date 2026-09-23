@@ -31,7 +31,7 @@ arr3.sort((a,b) => {
         return 1;
 
     }else if (a<b){
-        //a가 b앞에 와라
+         //a가 b앞에 와라
         return -1;// a,b배치
     }else{
         //두값의 자리를 바꾸지 마라
