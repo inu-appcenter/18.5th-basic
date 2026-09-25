@@ -41,6 +41,7 @@ const Main = () => {
         //   backgroundColor: "red",
         //   borderBottom: "5px solid blue",
         // }}
+        // jsx는 자바스크립트랑 HTML을 함께 써서 class를 쓸수 없음
         className="logout"
         >
           로그아웃
