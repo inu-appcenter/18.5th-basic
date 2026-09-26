@@ -1,4 +1,4 @@
-import {useState} from "react";
+import {useState, useRef} from "react";
 // 간단한 회원가입 폼
 // 1. 이름
 // 2. 생년월일
@@ -18,10 +18,22 @@ const Register = ()=>{
     bio : "",
   });
 
+  // const refObj = useRef(0);
+  const countRef = useRef(0);
+  const inputRef = useRef();
+  // console.log("Register 렌더링");
+
+  // let count = 0; //  count 값이 리렌더링 될 때마다 0으로 리셋
+
   // console.log(input);
 
 const onChange = (e)=>{
-  console.log(e.target.name, e.target.value);
+  countRef.current++;
+  // count ++;
+  console.log(countRef.current); // 수정 횟수 알려줌
+  // console.log(count); // count가 1로만 계속 출력
+
+  // console.log(e.target.name, e.target.value);
   setInput({
     ...input, // input의 값을 다 나열해줌
     // [e.target.name]은 프로퍼티 키로 설정
@@ -30,6 +42,13 @@ const onChange = (e)=>{
     [e.target.name]: e.target.value, 
   });
 };
+
+const onSubmit = ()=> {
+  if(input.name == "") {
+    //  이름을 입력하는 DOM 요소 포커스
+    inputRef.current.focus();
+  }
+}
 
   // const onChangeName = (e)=>{
   //   setName(e.target.value);
@@ -78,8 +97,18 @@ const onChange = (e)=>{
 
   return (
     <div>
+      {/* useRef */}
+      {/* <button
+        onClick={()=>{
+          refObj.current++;
+          console.log(refObj.current);
+        }}
+      >
+        ref +1
+      </button> */}
       <div>
         <input 
+          ref={inputRef} // input 태그가 렌더링하는 DOM요소가 inputRef라는 래퍼런스 오브젝트에 저장
           name="name"
           // value={name}
           value={input.name}
@@ -124,6 +153,8 @@ const onChange = (e)=>{
           onChange={onChange} 
           />
       </div>
+
+      <button onClick={onSubmit}>제출</button>
     </div>
   );
 };
