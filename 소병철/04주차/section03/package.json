@@ -1,0 +1,16 @@
+{
+  "name": "section03",
+  "version": "1.0.0",
+  "description": "- 한입리액트 섹션4, 5 (Node.js, React.js 개론) 강의 정리 및 실습",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "randomcolor": "^0.6.2"
+  }
+}
