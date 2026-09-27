@@ -1,3 +1,5 @@
+// 5.4 Props로 데이터 전달하기
+
 // const Button = (props) => {
 //   console.log(props);
 //   return (
@@ -7,6 +9,8 @@
 //   </button>
 //   );
 // };
+
+// 5.5 이벤트 처리하기
 
 const Button = ({children, text, color = "black"}) => {
   // 이벤트 객체
