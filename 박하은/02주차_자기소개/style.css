@@ -1,0 +1,35 @@
+body {
+    background-image: url(./imagesduck.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    color: #333333;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+h1 {
+    text-align: center;
+    color: navy;
+    font-size: 32px;
+}
+
+.box {
+    border: 2px solid #2f4f3f;
+    width: 500px;
+    padding: 20px;
+
+    margin: 30px auto;
+
+    border-radius: 15px;
+}
+
+ul {
+    list-style: square;
+}
+
+li {
+    font-size: 18px;
+    line-height: 2;
+}

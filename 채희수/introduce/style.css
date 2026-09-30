@@ -1,0 +1,55 @@
+
+body {
+    background-color: #eef2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+.card {
+    background-color: white;
+    width: 500px;
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+h1 {
+    margin: 0;
+    color: #333;
+}
+
+.email {
+    color: #0066cc;
+    margin-top: 5px;
+}
+
+.outer {
+  width: 200px; height: 200px;
+  margin: 0 auto;
+  background-color: #eee;
+  border-radius: 20%;
+  overflow: hidden;
+}
+
+.with-bg {
+  height: 100%;
+  background-image: url("./IMG_8282.JPG");
+  background-size: cover;
+
+}
+
+.intro {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.intro p {
+    margin: 8px 0;
+}
