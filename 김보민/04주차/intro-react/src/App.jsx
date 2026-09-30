@@ -1,19 +1,26 @@
+import { useState } from "react";
 import "./App.css";
 
 function App() {
-  
+  const [count, setCount] = useState(0);
+
   return (
     <div id="container">
       <div id="card">
-        {/* 상단 헤더: 주황 배경 + 흰 글씨로 이름이 잘 보이게 함 */}
         <header className="card-header">
-          <div className="avatar">🐣</div>
+          <div className="avatar">😄</div>
           <h1>김보민</h1>
-          <p className="sub">인천대학교 정보통신공학과 25학번</p>
+
+          <button
+            type="button"
+            className="like-btn"
+            onClick={() => setCount(count + 1)}
+          >
+            👋 손 흔들기 {count}
+          </button>
         </header>
 
         <div className="card-body">
-          {/* 소개: 표(table) 대신 "라벨 + 내용" 한 줄씩으로 읽기 편하게 */}
           <section>
             <h2>📌 소개</h2>
 
@@ -43,7 +50,6 @@ function App() {
             </div>
           </section>
 
-          {/* 취미: 왼쪽 정렬된 둥근 칩 모양 (스타일은 App.css의 .hobby-list) */}
           <section>
             <h2>🌼 취미</h2>
             <ul className="hobby-list">
@@ -53,16 +59,32 @@ function App() {
             </ul>
           </section>
 
-          
+          <section>
+            <h2>🛠 사용할 수 있는 것</h2>
 
-          {/* GitHub 링크 */}
+            <p className="skill-title">언어</p>
+            <ul className="hobby-list">
+              <li>C언어</li>
+              <li>HTML</li>
+              <li>JavaScript</li>
+              <li>React</li>
+            </ul>
+
+            <p className="skill-title">툴</p>
+            <ul className="hobby-list">
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>VS Code</li>
+            </ul>
+          </section>
+
           <p className="github-link">
             <a
               href="https://github.com/qhals9441"
               target="_blank"
               rel="noreferrer"
             >
-               GitHub 바로가기
+              GitHub 바로가기
             </a>
           </p>
         </div>
@@ -71,5 +93,4 @@ function App() {
   );
 }
 
-// 다른 파일(main.jsx)에서 import 할 수 있게 내보냄 (ESM의 export default)
 export default App;
