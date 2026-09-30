@@ -30,7 +30,7 @@ console.log(mul(1, 2));
 */
 
 
-import randomColor from "randomcolor"; //경로가 아닌 라이브러리 이름명시
+import randomColor from "randomcolor";
 
 const color = randomColor();
 console.log(color);
