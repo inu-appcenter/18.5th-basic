@@ -1,17 +1,11 @@
-// React에서 state를 쓰기 위해 useState를 가져옴
-import { useState } from "react";
 import "./App.css";
 
 function App() {
-  // state: 화면에 영향을 주는 변수
-  // show: 현재 값 (처음엔 false = 인사말이 안 보임)
-  // setShow: show 값을 바꾸는 함수
-  const [show, setShow] = useState(false);
-
+  
   return (
     <div id="container">
       <div id="card">
-        {/* ① 상단 헤더: 주황 배경 + 흰 글씨로 이름이 잘 보이게 함 */}
+        {/* 상단 헤더: 주황 배경 + 흰 글씨로 이름이 잘 보이게 함 */}
         <header className="card-header">
           <div className="avatar">🐣</div>
           <h1>김보민</h1>
@@ -19,7 +13,7 @@ function App() {
         </header>
 
         <div className="card-body">
-          {/* ② 소개: 표(table) 대신 "라벨 + 내용" 한 줄씩으로 읽기 편하게 */}
+          {/* 소개: 표(table) 대신 "라벨 + 내용" 한 줄씩으로 읽기 편하게 */}
           <section>
             <h2>📌 소개</h2>
 
@@ -49,7 +43,7 @@ function App() {
             </div>
           </section>
 
-          {/* ③ 취미: 왼쪽 정렬된 둥근 칩 모양 (스타일은 App.css의 .hobby-list) */}
+          {/* 취미: 왼쪽 정렬된 둥근 칩 모양 (스타일은 App.css의 .hobby-list) */}
           <section>
             <h2>🌼 취미</h2>
             <ul className="hobby-list">
@@ -61,7 +55,7 @@ function App() {
 
           
 
-          {/* ⑤ GitHub 링크 */}
+          {/* GitHub 링크 */}
           <p className="github-link">
             <a
               href="https://github.com/qhals9441"
