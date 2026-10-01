@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --main: #f7c493;
+  --main-dark: #c07a35;
+  --light: #fff1d6;
+  --text: #5a4632;
+  --sub-text: #a88560;
+}
+
+body {
+  margin: 0;
+  background-color: #fffbee;
+  background-image:
+    radial-gradient(#ffe8a6 7px, transparent 7px),
+    radial-gradient(#ffd6a8 7px, transparent 7px);
+  background-size: 56px 56px;
+  background-position: 0 0, 28px 28px;
+  color: var(--text);
+  font-family: "Jua", sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  padding: 48px 16px;
+}
+
+#card {
+  width: 100%;
+  max-width: 440px;
+  background-color: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 8px 24px rgba(247, 196, 147, 0.35);
+  overflow: hidden;
+}
+
+.card-header {
+  padding: 32px 24px;
+  text-align: center;
+  color: #6b4423;
+  background: linear-gradient(135deg, #ffdcae, #ffeab5);
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+  background: white;
+  border-radius: 50%;
+}
+
+h1 {
+  margin: 0;
+  font-family: inherit;
+  font-size: 1.8em;
+  font-weight: normal;
+  color: #6b4423;
+}
+
+.card-body {
+  padding: 4px 28px 28px;
+  text-align: left;
+}
+
+section {
+  margin-top: 22px;
+}
+
+h2 {
+  margin: 0 0 10px;
+  font-family: inherit;
+  font-size: 1em;
+  font-weight: normal;
+  color: var(--main-dark);
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 5px 0;
+  font-size: 0.95em;
+}
+
+.info-label {
+  flex-shrink: 0;
+  width: 80px;
+  text-align: center;
+  font-size: 0.9em;
+  font-weight: normal;
+  color: var(--main-dark);
+  background-color: var(--light);
+  border-radius: 999px;
+}
+
+.hobby-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hobby-list li {
+  padding: 4px 13px;
+  font-size: 0.9em;
+  border: 1px solid var(--main);
+  border-radius: 999px;
+  color: var(--main-dark);
+  background-color: #fffaf0;
+  transition: all 200ms;
+}
+
+.hobby-list li:hover {
+  background-color: #ffe6c2;
+  color: #8a5424;
+}
+
+.skill-title {
+  margin: 10px 0 5px;
+  font-size: 0.85em;
+  color: var(--sub-text);
+}
+
+.github-link {
+  margin: 24px 0 0;
+  text-align: center;
+}
+
+.github-link a {
+  display: inline-block;
+  padding: 10px 28px;
+  font-size: 0.95em;
+  color: #6b4423;
+  text-decoration: none;
+  background: linear-gradient(135deg, #ffdcae, #ffeab5);
+  border: 2px solid var(--main);
+  border-radius: 999px;
+  box-shadow: 0 4px 10px rgba(247, 196, 147, 0.45);
+  transition: all 200ms;
+}
+
+.github-link a:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #ffd39a, #ffe29a);
+  box-shadow: 0 6px 14px rgba(247, 196, 147, 0.6);
+}
+
+.github-link a:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(247, 196, 147, 0.4);
+}
+
+.like-btn {
+  margin-top: 12px;
+  padding: 6px 18px;
+  font-family: inherit;
+  font-size: 0.95em;
+  color: #6b4423;
+  background-color: white;
+  border: 2px solid var(--main);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 200ms;
+}
+
+.like-btn:hover {
+  transform: scale(1.06);
+  background-color: #fff1d6;
+}
+
+.like-btn:active {
+  transform: scale(0.96);
+}
