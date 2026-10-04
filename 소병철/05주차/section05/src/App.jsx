@@ -1,11 +1,10 @@
 import "./App.css";
-import Header from "./components/header";
+import HookExam from "./components/HookExam";
 
 function App() {
   return (
     <>
-      <Header />
-      <h1>Hello, React!</h1>
+      <HookExam />
     </>
   );
 }
