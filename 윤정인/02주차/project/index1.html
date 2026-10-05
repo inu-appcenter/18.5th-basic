@@ -11,45 +11,34 @@
   <div id="container">
     <div id="card">
 
-      <h1 id="name"> 윤정인</h1>
-      <p class="sub">안녕하세요. 
-      <p class="sub"> <strong>정보통신공학과 지능제어/내비게이션 연구실에서 </strong> 사람 움직임을 학습하는 AI를 공부하고 있습니다.</p>
-            <p>
-        <video src="./lafan1_0903.mp4" width="250" autoplay muted loop playsinline></video>
-      </p>
+      <!-- 시계는 script.js가 1초마다 바뀐다. -->
+      <p class="clock" id="clock"></p>
 
-      <hr>
+      <h3 class="title">PROFILE</h3>
+      <img class="avatar" src="./profile.jpg" alt="프로필 사진">
 
-      <h2>기본 정보</h2>
-      <table>
-        <tbody>
-          <tr>
-            <th>학교</th>
-            <td>인천대학교</td>
-          </tr>
-          <tr>
-            <th>전공</th>
-            <td>정보통신공학과</td>
-          </tr>
-        </tbody>
-      </table>
+      <!-- 인사말 : script.js가 한 글자씩 타이핑 -->
+      <p class="intro" id="intro"></p>
+
+      <table class="info" id="info"></table>
+
+      <h2>연구</h2>
+      <video src="./lafan1_0903.mp4" autoplay muted loop playsinline></video>
 
       <h2>관심사</h2>
-      <ul>
-        Fashion
-        <li><p class="sub">올해 패션 브랜드를 만드는 프로젝트의  웹페이지를 제작해볼 계획입니다.</p></li>
-      </ul>
-
       <p>
-        <img src="./20260709OfftoParis-8284.jpg" alt="패션 프로젝트 사진 1" width="100">
-        <img src="./20260709OfftoParis-8049.jpg" alt="패션 프로젝트 사진 2" width="225">
+        <strong>Fashion</strong><br>
+        올해 패션 브랜드를 만드는 프로젝트의 웹페이지를 제작해볼 계획입니다.
       </p>
-      
-        <p>
-          <a href="https://github.com/jeonginniy/first-jeongin-project" target="_blank">GitHub 주소</a>
-        
+      <div class="photos">
+        <img src="./20260709OfftoParis-8284.jpg" alt="패션 프로젝트 사진 1">
+        <img src="./20260709OfftoParis-8049.jpg" alt="패션 프로젝트 사진 2">
+      </div>
 
     </div>
+
+    <div id="links"></div>
+
   </div>
 
   <script src="./script.js"></script>
