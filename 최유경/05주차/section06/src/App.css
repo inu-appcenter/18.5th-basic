@@ -1,0 +1,25 @@
+/*여백*/
+body {
+  padding: 20px;
+}
+
+/*가운데 배치*/
+.App {
+  margin: 0 auto;
+  /*화면상의 남는 부분을 자동으로 margin 설정*/
+  width: 400px;
+
+}
+
+.App>section {
+  background-color: rgb(245, 245, 245);
+  /*백그라운드*/
+  border: 1px solid rgb(240, 240, 240);
+  /*경계선 직선*/
+  border-radius: 2px;
+  /*모서리 둥글게*/
+  padding: 20px;
+  /*내부 여백*/
+  margin-bottom: 10px;
+  /*아래 방향 여백*/
+}
