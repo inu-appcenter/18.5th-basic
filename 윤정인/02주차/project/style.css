@@ -4,72 +4,137 @@
 
 body {
   margin: 0;
-  background-color: #5bbdff;
-  color: #1d2a33;
+  background: #f4f4f4;
+  color: #333;
   font-family: sans-serif;
-  line-height: 1.6em;
 }
 
+/* 가운데 한 칸 */
 #container {
-  display: flex;
-  justify-content: center;
-  padding: 48px 16px;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 0 16px;
 }
 
 #card {
-  width: 100%;
-  max-width: 480px;
-  padding: 32px;
-  background-color: rgb(197, 240, 204);
-  border-top: 6px solid rgb(255, 158, 249);
-  border-radius: 4px;
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-h1 {
-  margin: 0;
-  font-size: 2em;
+/* 프로필 */
+.title {
+  margin: 0 0 24px;
+  text-align: center;
+  letter-spacing: 3px;
+  color: #666;
 }
 
-.sub {
-  margin-top: 4px;
-  color: rgb(23, 22, 22);
+.avatar {
+  display: block;
+  width: 160px;
+  height: 160px;
+  margin: 0 auto;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #eee;
 }
 
-hr {
-  border: none;
-  border-top: 1px solid #dde3e8;
+.intro {
   margin: 24px 0;
+  text-align: center;
+  font-style: italic;
+  line-height: 1.6;
+  color: #666;
 }
 
+/* 정보 표 */
+.info {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.info th,
+.info td {
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.info tr:last-child th,
+.info tr:last-child td {
+  border-bottom: none;
+}
+
+.info th { text-align: left; font-weight: normal; color: #666; }
+.info td { text-align: right; }
+.info a  { color: #9a6b45; text-decoration: none; }
+
+/* 섹션 제목 */
 h2 {
-  font-size: 1.1em;
-  color: steelblue;
+  margin: 40px 0 12px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #333;
+  font-size: 18px;
 }
 
-th {
-  text-align: left;
-  padding: 4px 24px 4px 0;
-  font-weight: normal;
-  color: gray;
+p {
+  line-height: 1.6;
 }
 
-ul li:hover {
-  color: steelblue;
+/* 영상, 사진 */
+video {
+  width: 100%;
+  border-radius: 8px;
 }
 
-a {
-  color: steelblue;
+.photos {
+  display: flex;
+  gap: 8px;
 }
 
-button {
-  margin-top: 24px;
-  padding: 8px 16px;
-  border: 1px solid steelblue;
-  border-radius: 4px;
-  background-color: white;
-  color: steelblue;
-  font-size: 1em;
-  cursor: pointer;
-  transition: all 250ms;
+.photos img {
+  width: 50%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* 링크 카드 */
+.link {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 12px;
+  padding: 16px 24px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  color: #333;
+  text-decoration: none;
+}
+
+.link:hover {
+  outline: 2px solid black;
+}
+
+.link small {
+  color: #777;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: #1a1a1a;
+  color: white;
+  font-weight: bold;
+}
+
+.velog {
+  background: #72c69c;
 }
 
