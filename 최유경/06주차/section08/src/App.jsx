@@ -1,14 +1,12 @@
 import './App.css'
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import Header from './components/Header'
 import Editor from './components/Editor'
 import List from './components/List'
 
-//임시데이터
-//app이 리렌더링될때마다 다시 생성될 필요도없고 상수이기 때문에 컴퍼넌트 외부에 생성
 const mockData = [
   {
-    id: 0,  //아이템 구별을 위한
+    id: 0,
     isDone: false,
     content: "React 공부하기",
     date: new Date().getTime(),
@@ -28,14 +26,25 @@ const mockData = [
 ];
 
 function App() {
-
   const [todos, setTodos] = useState(mockData);
+  const idRef = useRef(3);
 
+  const onCreate = (content) => {
+    const newTodo = {
+      id: idRef.current++,
+      isDone: false,
+      content: content,
+      date: new Date().getTime()
+    }
+
+    //todos.push(newTodo) XX state값은 무조건 상태변화함수로 수정가능 
+    setTodos([newTodo, ...todos])
+  };
 
   return (
     <div className='App'>
       <Header />
-      <Editor />
+      <Editor onCreate={onCreate} />
       <List />
     </div>
   )
