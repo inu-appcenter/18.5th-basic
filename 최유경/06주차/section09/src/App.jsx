@@ -1,9 +1,9 @@
 import './App.css'
-import { useState, useRef } from 'react'
+import { useState, useRef, useReducer } from 'react'
 import Header from './components/Header'
 import Editor from './components/Editor'
 import List from './components/List'
-import Exam from './components/Exam'
+
 
 const mockData = [
   {
@@ -26,54 +26,60 @@ const mockData = [
   },
 ];
 
+function reducer(state, action) {
+  switch (action.type) {
+    case 'CREATE': return [action.data, ...state];
+    case 'UPDATE':
+      return state.map((item) =>
+        item.id === action.targetId
+          ? { ...item, isDone: !item.isDone }
+          : item
+      )
+    case 'DELETE':
+      return state.filter((item) =>
+        item.id !== action.targetId
+      );
+    default: return state;
+
+  }
+}
+
 function App() {
-  const [todos, setTodos] = useState(mockData);
+  const [todos, dispatch] = useReducer(reducer, mockData);
   const idRef = useRef(3);
 
   const onCreate = (content) => {
-    const newTodo = {
-      id: idRef.current++,
-      isDone: false,
-      content: content,
-      date: new Date().getTime()
-    }
+    dispatch({
+      type: "CREATE",
+      data: {
+        id: idRef.current++,
+        isDone: false,
+        content: content,
+        date: new Date().getTime(),
+      }
+    })
+  }
 
-    //todos.push(newTodo) XX state값은 무조건 상태변화함수로 수정가능 
-    setTodos([newTodo, ...todos])
-  };
 
   const onUpdate = (targetId) => {
-    // todos State의 값들 중에
-    // targetId와 일치하는 id를 갖는 투두 아이템의 isDone 변경
-
-    // setTodos 인수 : todos 배열에서 targetId와 일치하는 id를 갖는 요소의 데이터만 바꾼 새로운 배열
-    setTodos(todos.map((todo) => {
-      if (todo.id === targetId) {
-        return {
-          ...todo,
-          isDone: !todo.isDone  //기존 isDone값을 toggle
-        }
-      }
-      return todo
-    }))
+    dispatch({
+      type: "UPDATE",
+      targetId: targetId,
+    })
   }
-  // 화살표 함수로 더 간결하게(삼항연산)
-  //   setTodos(todos.map((todo) =>
-  //     todo.id === targetId
-  //       ? { ...todo, isDone: !todo.isDone }
-  //       : todo))
-  // }
+
   const onDelete = (targetId) => {
-    // 인수: todos 배열에서 targetId와 일치하는 id를 갖는 요소만 삭제한 새로운 배열 
-    setTodos(todos.filter((todo) => todo.id !== targetId));
+    dispatch({
+      type: "DELETE",
+      targetId: targetId,
+    })
   }
 
   return (
     <div className='App'>
-      <Exam />
-      {/* <Header />
+      <Header />
       <Editor onCreate={onCreate} />
-      <List todos={todos} onUpdate={onUpdate} onDelete={onDelete} /> */}
+      <List todos={todos} onUpdate={onUpdate} onDelete={onDelete} />
     </div>
   )
 }
