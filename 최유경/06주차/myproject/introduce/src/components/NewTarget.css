@@ -1,0 +1,30 @@
+.targets_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* Target.css에서 쓴 간격과 맞추기 */
+}
+
+.Target .new_input {
+  flex: 1;
+  /* Target의 .content와 같은 자리 차지 */
+  width: auto;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 0;
+  font: inherit;
+}
+
+.new_target input[type="checkbox"] {
+  opacity: 0.4;
+}
+
+.new_target>button {
+  cursor: pointer;
+  color: gray;
+  font-size: 12px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
