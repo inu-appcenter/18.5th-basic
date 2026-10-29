@@ -1,0 +1,30 @@
+.Target {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 12px;
+  font-size: 14px;
+  border-bottom: 1px solid rgb(240, 240, 240);
+}
+
+.Target .input {
+  width: 20px;
+}
+
+.Target .content {
+  flex: 1;
+}
+
+.Target .date {
+  font-size: 14px;
+  color: gray;
+}
+
+.Target button {
+  cursor: pointer;
+  color: gray;
+  font-size: 12px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
