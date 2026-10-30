@@ -1,9 +1,8 @@
 import "./App.css";
-import { useState, useRef, useReducer, act } from "react";
+import { useRef, useReducer, useCallback } from "react";
 import Header from "./components/Header";
 import Editor from "./components/Editor";
 import List from "./components/List";
-import { useCallback } from "react";
 
 const mockData = [
   {
