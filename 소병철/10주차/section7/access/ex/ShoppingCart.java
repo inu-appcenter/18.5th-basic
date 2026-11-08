@@ -28,5 +28,6 @@ public class ShoppingCart {
             Item item = items[i];
             totalPrice += item.getTotalPrice();
         }
+        return totalPrice;
     }
 }
