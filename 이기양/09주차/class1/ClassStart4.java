@@ -1,0 +1,28 @@
+package class1;
+
+public class ClassStart4 {
+  public static class Student {
+  String name;
+  int age;
+  int grade;
+
+  public Student(String name, int age, int grade) {
+    this.name = name;
+    this.age = age;
+    this.grade = grade;
+  }
+}
+
+  public static void main(String[] args) {
+    Student student1 = new Student("학생1", 15, 90);
+    Student student2 = new Student("학생2", 16, 80);
+
+    Student[] students = new Student[2];
+    students[0] = student1;
+    students[1] = student2;
+
+    System.out.println("이름: " + student1.name + ", 나이: " + student1.age + ", 성적: " + student1.grade);
+    System.out.println("이름: " + student2.name + ", 나이: " + student2.age + ", 성적: " + student2.grade);
+
+  }
+}
