@@ -1,0 +1,25 @@
+.Content {
+  padding-bottom: 12px;
+  /*글자와 선 사이 간격*/
+  border-bottom: 1px solid rgb(220, 220, 220);
+  /*밑줄*/
+}
+
+
+.Content>p {
+  margin: 2px 0;
+  /* p의 기본 여백이 커서 줄임 */
+  font-size: 13px;
+  color: rgb(80, 80, 80);
+}
+
+
+.Content a {
+  text-decoration: none;
+  /* 밑줄 제거 */
+}
+
+.Content a:hover {
+  text-decoration: underline;
+  /* 마우스를 올리면 밑줄 */
+}

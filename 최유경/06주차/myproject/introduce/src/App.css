@@ -1,0 +1,27 @@
+.App {
+  width: 500px;
+  margin: 0 auto;
+
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 10px;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Profile>img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  object-position: top;
+  /*동그랗게*/
+  border-radius: 50%;
+}
+
+.Profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}

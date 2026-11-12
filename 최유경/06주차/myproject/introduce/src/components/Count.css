@@ -1,0 +1,18 @@
+.Count {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*버튼 크기*/
+.Count>button {
+  width: 80px;
+  height: 22px;
+  padding: 4px 0;
+  font-size: 10px;
+}
+
+/*글자 두께*/
+.Count>h2 {
+  font-weight: 400;
+}
