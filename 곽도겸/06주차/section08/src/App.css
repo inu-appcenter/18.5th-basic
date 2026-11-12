@@ -1,0 +1,7 @@
+.App {
+  width: 500px;
+  margin: 0 auto; /*가운데 정렬*/
+  display: flex; /*자식요소들의 배치를 유연하게 설정 */
+  flex-direction: column; /*flex 정렬 기준을 세로로 설정 */
+  gap: 10px; /*요소들의 간격*/
+}
