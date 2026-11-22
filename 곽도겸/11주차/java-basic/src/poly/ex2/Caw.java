@@ -1,8 +1,8 @@
 package poly.ex2;
 
-public class Dog extends Animal {
+public class Caw extends Animal {
     @Override
     public void sound() {
-        System.out.println("멍멍");
+        System.out.println("음매");
     }
 }

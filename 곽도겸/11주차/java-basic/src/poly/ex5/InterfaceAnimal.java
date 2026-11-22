@@ -1,4 +1,6 @@
 package poly.ex5;
 
-public class InterfaceAnimal {
+public interface InterfaceAnimal {
+    void sound();
+    void move();
 }
